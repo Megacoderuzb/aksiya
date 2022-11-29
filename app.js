@@ -14,12 +14,11 @@
 
 // showTime();
 // setInterval(showTime, 1000);
-
+let hours = +prompt(`Aksiya soat nechida(24 soatlik formatda kirgazing)?`);
+let minutes = +prompt(`Necha minut o'tganda?`);
+let seconds = +prompt(`Necha secund o'tganda?`);
 let timeShow = () => {
   let now = new Date();
-  let hours = +prompt(`Aksiya soat nechida(24 soatlik formatda kirgazing)?`);
-  let minutes = +prompt(`Necha minut o'tganda?`);
-  let seconds = +prompt(`Necha secund o'tganda?`);
 
   let hour = hours - now.getHours();
 
